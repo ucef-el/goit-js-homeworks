@@ -1,18 +1,18 @@
-"use strict";
+'use strict';
 
-let total = "количество товаров на складе";
-let ordered = "единиц товара в заказе";
+/**total - количество товаров на складе */
 
-total = 100;
+let total = 100;
 
-ordered = prompt("Вводите количество товаров");
+/**ordered - единиц товара в заказе */
 
+let ordered = Number(prompt('Вводите количество товаров'));
 let message;
 
-if (ordered > total) {
-  message = "На складе недостаточно твоаров!";
+if (total < ordered) {
+  message = 'На складе недостаточно твоаров!';
 } else {
-  message = "Заказ оформлен, с вами свяжется менеджер";
+  message = 'Заказ оформлен, с вами свяжется менеджер';
 }
 
 console.log(message);
